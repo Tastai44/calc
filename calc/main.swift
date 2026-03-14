@@ -11,4 +11,12 @@ import Foundation
 var args = ProcessInfo.processInfo.arguments
 args.removeFirst() // remove the name of the program
 
-print(Int(args[0])!)
+// Retrieve User Input
+
+// Initialize a Calculator object
+let calculator = Calculator();
+
+// Calculate the result
+let result = try calculator.calculate(args: args)
+
+print(result)
